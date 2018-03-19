@@ -1,8 +1,12 @@
 form{
-background-color: grey;
+background-color: rgb(235, 92, 92);
 
 }
+html{
+min-width: 100%;
+min-height: 100%;
 
+}
 tr,td{
 background-color: rgb(172, 231, 164);
 min-height: 100%;
@@ -13,7 +17,7 @@ text-align: left;
 th{
 background-color: aqua;
 text-align: left;
-font-size: 35px;
+font-size: 18px;
 font-style: italic;
 }
 
@@ -22,7 +26,22 @@ width: 100%;
 height: 100%;
 margin-top:20px;
 margin-left:20px;
-
-
 }
 
+.jumbotron{
+background-color: blue
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+font-size: 50px;
+font-style: italic;
+font-weight: bold;
+}
+ /* add media query
+ /* Small devices (tablets, 768px and up) */
+/* @media (min-width: @screen-sm-min) { ... } */
+
+/* Medium devices (desktops, 992px and up) */
+/* @media (min-width: @screen-md-min) { ... } */
+
+/* Large devices (large desktops, 1200px and up) */
+/* @media (min-width: @screen-lg-min) { ... } */ */

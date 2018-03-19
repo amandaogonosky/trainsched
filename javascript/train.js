@@ -14,5 +14,7 @@ console.log("CURRENT TIME: " + moment(currentTrain).format("hh:mm"));
 
 var diffTime = moment().diff(moment(firstTrainConvert), "minutes");
 console.log("DIFFERENCE IN TIME: " + diffTime);
+{
 
 
+}

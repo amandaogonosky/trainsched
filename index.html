@@ -13,7 +13,8 @@
 
         <div class= "jumbotron">
                 <div class="container">
-                  Where's That Train?
+                  <h1>Where's That Train Now?</h1>
+                    <p>If yer lookin' for a train bound to no-where,well don't look here!</p>
                 </div>
               </div>
         <form>
@@ -83,15 +84,37 @@
         <form>
             <input id="trainTime">
             <input type="text">
-
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="Train-Name" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">destination</span>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"></span>
+                    <input type="text" class="form-control" placeholder="Train-Name" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon2">
+                  <span class="input-group-addon" id="basic-addon2">example.com</span>                
+                            
+            </div>
+              
 
 
 
         </form>
-
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js"></script>
     <script src="javascript/train.js"></script>
+    
+   
+    
 </body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </html>

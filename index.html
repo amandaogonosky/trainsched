@@ -10,7 +10,6 @@
     <title>Trains</title>
 </head>
 <body>
-
         <div class= "jumbotron">
                 <div class="container">
                   <h1>Where's That Train Now?</h1>
@@ -19,9 +18,7 @@
               </div>
         <form>
             <table class ="table" style="width:100%">
-                <!-- <th class="train"></th> -->
                 <tr class="active">
-                <!-- <td></td> -->
                 <th>Train Name</th>
                 <th>Destination</th>
                 <th>Frequency (min)</th>
@@ -81,32 +78,26 @@
             </table>
         </form>
 
-        <form>
-            <input id="trainTime">
-            <input type="text">
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"></span>
-                <input type="text" class="form-control" placeholder="Train-Name" aria-describedby="basic-addon1">
-              </div>
-              
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon2">
-                <span class="input-group-addon" id="basic-addon2">destination</span>
+        <!-- <form> -->
+              <!-- <table class="table-input" style="width:100%"> -->
+                    <h1>Find a Space Train</h1>
+                 
+                <span class="input">Destination</span>
+                <input type="text"> 
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"></span>
-                    <input type="text" class="form-control" placeholder="Train-Name" aria-describedby="basic-addon1">
+                    <span class="input">Train Name</span>
+                    <input type="text">
                   </div>
                   
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon2">
-                  <span class="input-group-addon" id="basic-addon2">example.com</span>                
-                            
-            </div>
-              
+                    <span class="input">First Train Time (military-time)</span>
+                    <input type="text">
+                        <div class="input-group">
+                  <span class="input">Frequency</span>               
+                            <input type="text"> 
+            </div>  
 
-
-
-        </form>
+        <!-- </form> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
         <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js"></script>

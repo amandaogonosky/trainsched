@@ -39,8 +39,8 @@ margin-left:20px;
 }
 
 .jumbotron{
-background-color: blue
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: aquamarine;
+font-family: cursive;
 text-align: center;
 font-size: 50px;
 font-style: italic;
@@ -48,7 +48,10 @@ font-weight: bold;
 }
  /* add media query
  /* Small devices (tablets, 768px and up) */
-/* @media (min-width: @screen-sm-min) { ... } */
+@media (min-width: @screen-sm-min) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+ }
 
 /* Medium devices (desktops, 992px and up) */
 /* @media (min-width: @screen-md-min) { ... } */

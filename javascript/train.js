@@ -37,3 +37,9 @@ console.log("DIFFERENCE IN TIME: " + diffTime);
 // node modules directory
 
 }
+var tRemainder = diffTime % tFrequency;
+console.log(tRemainder);
+
+// next train
+var tMinutesTillTrain = tFrequency - tRemainder;
+console.log("Minutes To Train: " + moment(nextTrain).format("hh:mm:"));

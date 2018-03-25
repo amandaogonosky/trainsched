@@ -10,43 +10,102 @@
     <title>Trains</title>
 </head>
 <body>
+        <div class= "jumbotron">
+                <div class="container">
+                  <h1>Where's That Train Now?</h1>
+                    <p>If yer lookin' for a train bound to no-where,well don't look here!</p>
+                </div>
+              </div>
         <form>
             <table class ="table" style="width:100%">
-                <!-- <th class="train"></th> -->
-                <tr>
-                <!-- <td></td> -->
-                <th>Train</th>
-                <th>Time</th>
+                <tr class="active">
+                <th>Train Name</th>
                 <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next One</th>
+                <th>Minutes Away</th>
                 </tr>
                 
-                <tr>
-                    <td>Number</td>
+                <tr class="success">
+                    <td>Mercury</td>
                     <td>Zone</td>
-                    <td>Place</td>
+                    <td>On the way</td>
+                    <td>How close</td>
+                    <td>Time Left</td>
                 </tr>
-                <tr>
-                    <td>Number</td>
+                <tr class="warning">
+                    <td>Venus</td>
                     <td>Zone</td>
-                    <td>Place</td>
+                    <td>On the way</td>
+                    <td>How close</td>
+                    <td>Time Left</td>
                 </tr>
-                <tr>
-                    <td>Number</td>
+                <tr class="danger">
+                    <td>Earth</td>
                     <td>Zone</td>
-                    <td>Place</td>
+                    <td>On the way</td>
+                    <td>How close</td>
+                    <td>Time Left</td>
                 </tr>
-                <tr>
-                    <td>Number</td>
+                <tr class="info">
+                    <td>Mars</td>
                     <td>Zone</td>
-                    <td>Place</td>
+                    <td>On the way</td>
+                    <td>How close</td>
+                    <td>Time Left</td>
                 </tr>
-
-
+                <tr class="active">
+                        <td>Jupiter</td>
+                        <td>Zone</td>
+                        <td>On the way</td>
+                        <td>How close</td>
+                        <td>Time Left</td>
+                    </tr>
+                    <tr class="sucess">
+                            <td>Saturn</td>
+                            <td>Zone</td>
+                            <td>On the way</td>
+                        <td>How close</td>
+                        <td>Time Left</td>
+                        </tr>
+                        <tr class="warning">
+                                <td>Uranus</td>
+                                <td>Zone</td>
+                                <td>On the way</td>
+                                <td>How close</td>
+                                <td>Time Left</td>
+                            </tr>
             </table>
         </form>
 
+        <!-- <form> -->
+              <!-- <table class="table-input" style="width:100%"> -->
+                    <h1>Find a Space Train</h1>
+                 
+                <span class="input">Destination</span>
+                <input type="text"> 
+                <div class="input-group">
+                    <span class="input">Train Name</span>
+                    <input type="text">
+                  </div>
+                  
+                  <div class="input-group">
+                    <span class="input">First Train Time (military-time)</span>
+                    <input type="text">
+                        <div class="input-group">
+                  <span class="input">Frequency</span>               
+                            <input type="text"> 
+            </div>  
+
+        <!-- </form> -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.js"></script>
     <script src="javascript/train.js"></script>
+    
+   
+    
 </body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </html>

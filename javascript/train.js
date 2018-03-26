@@ -10,36 +10,71 @@ console.log("workin");
     storageBucket: "trainschedule-127fc.appspot.com",
     messagingSenderId: "157573037517"
   };
-
   
   firebase.initializeApp(config);
 
 // moment().format();
-var date;
-var format;
-var result =moment(date)
 var database = firebase.database();
+
+var date;
+// var format;
+// var result =moment(date)
+var name = "";
 var tFreq = 3;
-
 var firstTrain = "03:30";
+var destination = "";
+var nextArrival = "";
+var currentTime = moment();
 
-var firstTrainConvert = moment(firstTrain, "HH:mm").subtract(1, "years");
-console.log(firstTrainConvert);
+// on click event for getting the user train info input
 
-var currentTrain = moment();
-console.log("CURRENT TIME: " + moment(currentTrain).format("hh:mm"));
+$("#submit").on("click", function(){
+event.preventDefault();
+
+destination = $("#destination").val().trim();
+name = $("#train-name").val().trim();
+firstTraintime = $("#firstTraintime").val().trim();
+frequency = $("#frequency").val().trim();
+
+database.ref().push({
+  destination: destination,
+  name: name,
+  firstTraintime: firstTraintime, 
+  frequency: frequency,
+});
+})
+  
+database.ref().on("child_added", function(childSnapshot)
+  {
+  // if (!childSnapshot) {
+// return;
+
+  // }
+  console.log(childSnapshot.val().firstTraintime);
+  console.log(childSnapshot.val().name);
+  console.log(childSnapshot.val().destination);
+  console.log(childSnapshot.val().frequency);
+});
 
 
-var diffTime = moment().diff(moment(firstTrainConvert), "minutes");
-console.log("DIFFERENCE IN TIME: " + diffTime);
-{
+// invoke function by itself no argument
+// var firstTrainConvert = moment(firstTrain, "HH:mm").subtract(1, "years");
+// console.log(firstTrainConvert);
 
-// node modules directory
+// var currentTrain = moment();
+// console.log("CURRENT TIME: " + moment(currentTrain).format("hh:mm"));
 
-}
-var tRemainder = diffTime % tFrequency;
-console.log(tRemainder);
+// var diffTime = moment().diff(moment(firstTrainConvert), "minutes");
+// console.log("DIFFERENCE IN TIME: " + diffTime);
+// {
 
-// next train
-var tMinutesTillTrain = tFrequency - tRemainder;
-console.log("Minutes To Train: " + moment(nextTrain).format("hh:mm:"));
+// // .append(tFreq)
+// // node modules directory
+
+// }
+// var tRemainder = diffTime % tFreq;
+// console.log(tRemainder);
+
+// // next train
+// var tMinutesTillTrain = tFreq - tRemainder;
+// // console.log("Minutes To Train: " + moment(nextArrival).format("hh:mm:");
